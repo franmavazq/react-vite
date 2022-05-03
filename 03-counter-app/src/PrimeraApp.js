@@ -1,11 +1,7 @@
-// Functional components
-
-// import React, { Fragment } from 'react';
 import React from 'react';
+import PropTypes from 'prop-types';
 
-// Recibimos la props que recibimos de index y realizamos una desestructuracion de elementos enviados al componente, para evitar colocar props.saludo
-// Ni se crea una constante adicional.
-const PrimeraApp = ( { saludo='Hola mundo' } ) => {
+const PrimeraApp = ({ saludo }) => {
 
   return (
     <>
@@ -14,6 +10,9 @@ const PrimeraApp = ( { saludo='Hola mundo' } ) => {
       <p>Este es un parrafo</p>
     </>
   );
+}
+PrimeraApp.propTypes = {
+  saludo: PropTypes.string.isRequired
 }
 
 export default PrimeraApp;
