@@ -12,7 +12,7 @@ console.log(nombre, apellido, valorDado);
 // No se debe usar var
 if(true){
   const nombre = 'Peter'
-  let valorDado = 6;
+  const valorDado = 6;
   console.log(nombre, valorDado);
 }
 
