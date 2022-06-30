@@ -1,8 +1,12 @@
+const getResult = () => {
+  return "Hola mundo";
+};
 export const FirstApp = () => {
   return (
     <>
-      <h1>Francisco</h1>
-      <p>Parrafo</p>
+      <h1>{getResult()}</h1>
+      {/*<code>{JSON.stringify(}</code >*/}
+      <p>Párrafo</p>
     </>
   );
 };
