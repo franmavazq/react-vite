@@ -1,9 +1,10 @@
-export const FirstApp = () => {
+export const FirstApp = ({ title, subTitle }) => {
+  // console.log(props)
   return (
     <>
-      <h1>Francisco</h1>
+      <h1>{title}</h1>
       {/*<code>{JSON.stringify(}</code >*/}
-      <p>Párrafo</p>
+      <p>{subTitle}</p>
     </>
   );
 };
