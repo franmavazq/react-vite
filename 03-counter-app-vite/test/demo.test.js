@@ -1,5 +1,10 @@
-test("should first", () => {
-  if (1 === 1) {
-    expect(1).toBe(1);
-  }
+describe("Pruebas en Component", () => {
+  test("should first", () => {
+    //  Arrange
+    const message1 = "Hello word";
+    // Act
+    const message2 = message1.trim();
+    // Assert
+    expect(message1).toBe(message2);
+  });
 });
